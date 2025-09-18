@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroKheti - Empowering Farmers</title>
+    <link rel="stylesheet" href="style.css"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-leaf"></i>
+                <h1>AgroKheti</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">My farm </a></li>
+                <li><a href="#">To-Do List</a></li>
+                <li><a href="#">Local Trend</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </div>
+                <div class="web-lang-select" style="margin-left:1rem;">
+                    <label for="web-language" style="font-weight:600;">Website Language:</label>
+                    <select id="web-language">
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                        <option value="pa">Punjabi</option>
+                        <option value="mr">Marathi</option>
+                        <option value="gu">Gujarati</option>
+                        <option value="bn">Bengali</option>
+                        <option value="ta">Tamil</option>
+                        <option value="te">Telugu</option>
+                        <option value="kn">Kannada</option>
+                        <option value="ml">Malayalam</option>
+                        <option value="or">Odia</option>
+                        <option value="as">Assamese</option>
+                        <option value="ur">Urdu</option>
+                        <option value="sd">Sindhi</option>
+                        <option value="sa">Sanskrit</option>
+                        <option value="ks">Kashmiri</option>
+                        <option value="kok">Konkani</option>
+                        <option value="mai">Maithili</option>
+                        <option value="ne">Nepali</option>
+                    </select>
+                </div>
+                <a href="#" class="accessibility-icon" aria-label="Accessibility Options">
+                    <i class="fa-solid fa-universal-access"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>AgroKheti</h2>
+                <p class="subtitle">by PSA Content Desk</p>
+                <p class="date">September 15, 2025</p>
+                
+                <button class="cta-button" id="show-form">Helping Farmes to build better</button>
+            </div>
+        </section>
+
+
+                <section id="form-section" style="display:none;">
+                    <h2 class="form-heading">Enter the Form Detail</h2>
+                    <div class="input-page">
+                        <div class="container">
+                            <div class="left-panel">
+                                <div style="text-align:center;margin-bottom:1rem;">
+                                    <i class="fa-solid fa-microphone" style="font-size:4.5rem;color:#43a047;"></i>
+                                </div>
+                                <h3>Voice Input</h3>
+                                <p>Record your details in your local language.</p>
+                                <select id="voice-language">
+                                    <option value="hi-IN">Hindi</option>
+                                    <option value="en-IN">English</option>
+                                    <option value="pa-IN">Punjabi</option>
+                                    <option value="mr-IN">Marathi</option>
+                                    <option value="gu-IN">Gujarati</option>
+                                    <option value="bn-IN">Bengali</option>
+                                    <option value="ta-IN">Tamil</option>
+                                    <option value="te-IN">Telugu</option>
+                                    <option value="kn-IN">Kannada</option>
+                                    <option value="ml-IN">Malayalam</option>
+                                    <option value="or-IN">Odia</option>
+                                    <option value="as-IN">Assamese</option>
+                                    <option value="ur-IN">Urdu</option>
+                                    <option value="sd-IN">Sindhi</option>
+                                    <option value="sa-IN">Sanskrit</option>
+                                    <option value="ks-IN">Kashmiri</option>
+                                    <option value="kok-IN">Konkani</option>
+                                    <option value="mai-IN">Maithili</option>
+                                    <option value="ne-IN">Nepali</option>
+                                </select>
+                                <button id="voice-btn"><i class="fa-solid fa-microphone"></i> Start Recording</button>
+                                <div id="voice-output"></div>
+                            </div>
+                            <div class="right-panel">
+                                <div style="margin-bottom:1rem;">
+                                    <label for="form-language" style="font-weight:600;">Form Language:</label>
+                                    <select id="form-language">
+                                        <option value="en">English</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="pa">Punjabi</option>
+                                        <option value="mr">Marathi</option>
+                                        <option value="gu">Gujarati</option>
+                                        <option value="bn">Bengali</option>
+                                        <option value="ta">Tamil</option>
+                                        <option value="te">Telugu</option>
+                                        <option value="kn">Kannada</option>
+                                        <option value="ml">Malayalam</option>
+                                        <option value="or">Odia</option>
+                                        <option value="as">Assamese</option>
+                                        <option value="ur">Urdu</option>
+                                        <option value="sd">Sindhi</option>
+                                        <option value="sa">Sanskrit</option>
+                                        <option value="ks">Kashmiri</option>
+                                        <option value="kok">Konkani</option>
+                                        <option value="mai">Maithili</option>
+                                        <option value="ne">Nepali</option>
+                                    </select>
+                                </div>
+                                <h3>Farm Details</h3>
+                                <form id="farm-form">
+                                    <label for="location">Location</label>
+                                    <select id="location" required>
+                                        <option value="">Select Location</option>
+                                        <option>Auto-detect GPS</option>
+                                        <option>District A</option>
+                                        <option>District B</option>
+                                        <option>District C</option>
+                                    </select>
+                                    <label for="land-size">Land Size</label>
+                                    <select id="land-size">
+                                        <option><1 acre</option>
+                                        <option>1–5 acres</option>
+                                        <option>5+ acres</option>
+                                    </select>
+                                    <label for="crop">Crop</label>
+                                    <select id="crop">
+                                        <option>Wheat</option>
+                                        <option>Rice</option>
+                                        <option>Maize</option>
+                                        <option>Soybean</option>
+                                    </select>
+                                    <label for="soil-type">Soil Type</label>
+                                    <select id="soil-type">
+                                        <option>Sandy</option>
+                                        <option>Clay</option>
+                                        <option>Loamy</option>
+                                        <option>Black</option>
+                                    </select>
+                                    <label for="irrigation">Irrigation Source</label>
+                                    <select id="irrigation">
+                                        <option>Canal</option>
+                                        <option>Tube Well</option>
+                                        <option>Rainfed</option>
+                                        <option>Pond</option>
+                                    </select>
+                                    <label for="sowing">Sowing Type</label>
+                                    <select id="sowing">
+                                        <option>Manual</option>
+                                        <option>Machine</option>
+                                    </select>
+                                    <button type="submit" class="submit-btn">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fa-solid fa-leaf"></i> <span>AgroKheti</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Home</a> |
+                    <a href="#">Schemes</a> |
+                    <a href="#">Market Prices</a> |
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="footer-copy">
+                    &copy; 2025 AgroKheti. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    <script src="form.js"></script>
+    <script src="form-lang.js"></script>
+    <script src="web-lang.js"></script>
+
+</body>
+</html>
